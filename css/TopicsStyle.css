@@ -1,0 +1,50 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+
+}
+.topic {
+    position: relative;
+    background-color: rgb(170, 221, 242);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 50px; 
+    max-height: 150px; 
+    height: auto; 
+    width: 100%;
+    margin: 0.75rem;
+}
+
+.topicName {
+    background-color: rgb(94, 187, 195);
+    border: 1px solid rgb(85, 171, 179);
+    margin: 1rem;
+    border-radius: 15px;
+    padding: 1.25em;
+}
+.buttonsContainer{
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+    }
+}
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+    }
+}
+@media (min-width: 1280px) {
+    .grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 2rem;
+    }
+}

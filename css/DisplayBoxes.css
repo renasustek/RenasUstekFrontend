@@ -1,0 +1,143 @@
+.centered-header {
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+}
+
+.revisionRecourceType {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.revisionRecourceWhereToAccess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.revisionRecourceWhereToAccess a {
+    background-color: #e0e0e0;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.revisionRecourceDescription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.revisionRecourceDescription div {
+    background-color: #e0e0e0;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+.revisionRecource {
+    position: relative;
+    background-color: rgb(178, 202, 235);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 2rem;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .title {
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    width: 90%;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .button {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .buttonYes {
+    background-color: #5cc85f; /* Green */
+    color: white;
+  }
+  
+  .buttonYes:hover,
+  .buttonYes:active {
+    background-color: #51b156;
+    transform: scale(1.05);
+  }
+  
+  .buttonNo  {
+    background-color: #f61808; /* Red */
+    color: white;
+  }
+  
+  .buttonNo:hover,
+  .buttonNo:active {
+    background-color: #cf140a;
+    transform: scale(1.05);
+  }
+  

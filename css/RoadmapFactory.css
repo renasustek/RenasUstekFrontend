@@ -1,0 +1,35 @@
+.topMenu {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 20; 
+    left: 0;
+    z-index: 10; 
+    transform: translateY(0); 
+}
+
+.content {
+    padding-top: 80px; 
+    z-index: -2;
+}
+
+@media (max-width: 768px) {
+    .topMenu {
+        padding: 10px 5px;
+    }
+}
+
+@media (min-width: 769px) {
+    .topMenu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .topMenu > div {
+        margin: 0 15px;
+    }
+}
